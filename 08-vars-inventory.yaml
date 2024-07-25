@@ -2,6 +2,8 @@
   hosts: localhost
   tasks:
   - name: print information
+    vars:
+      timeings: "Daily 4 to 6 AM IST"
     ansible.builtin.debug:
       msg: "Hi, i am learning {{Topic}} from {{Trainer}}, Duration is {{Duration}}."
-      
+      Timeings are: {{timeings}}
