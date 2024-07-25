@@ -1,13 +1,13 @@
 - name: variables
   hosts: localhost
   vars: # variable declaration
-    Topic: "Ansible"
+    Topic: "Terraform"
     Trainer: "ansibledocumentation"
     Duration: "50hrs"
   tasks:
   - name: print information
     vars: # Task level variables
-      course: "Terraform"
+      course: "Ansible"
     ansible.builtin.debug:
       msg: "Hi, i am learning {{Topic}} from {{Trainer}}, Duration is {{Duration}}."
   
