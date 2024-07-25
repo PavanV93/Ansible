@@ -1,0 +1,10 @@
+- name: loops
+  hosts: localhost
+  tasks:
+  - name: print tools
+    ansible.builtin.debug:
+      msg: "Hello {{item}} "
+    loop:
+    - Docker
+    - Github
+    - JenkinsCLI
